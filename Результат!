@@ -1,0 +1,349 @@
+
+>> main_checker
+ProjectTitle = 'Demo for the egg carridge modelling, the toy function';
+DataFile     = 'demo.dat.txt'; 
+ModelsFile   = 'demo.mdl.txt';
+RegistryFile = 'demo.reg.xlsx'; 
+DATASEPARATOR    = ',';             
+THRESHOLDQUALITY = 0.005;     	
+MAXCYCLECOUNT    = 700;
+CROSSINGAMOUNT   = 10;
+MUTATIONAMOUNT   = 10;
+BESTELEMAMOUNT   = 20;
+MAXNUMOFPARAMS   = 6;               
+MAXNUMOFPRIMS    = 10;              
+CONTINUED         = 'off';          
+ModelBaseFile     = 'options.mdb.mat'; 
+PopulationFile    = 'options.pop.mat'; 
+nlinopts          = statset('nlinfit'); 
+nlinopts.MaxIter  = 30;             
+nlinopts.TolFun   = 1e-4;           
+nlinopts.TolX     = 1e-6;           
+nlinopts.Display  = 'off';          
+pltopts.display = 'on';             
+pltopts.xlabel = 'K';               
+pltopts.ylabel = 't';               
+pltopts.zlabel = '\sigma^{imp}';    
+pltopts.ratio  = [1 1 1];           
+pltopts.axis   = [18 28 0 .3 .5 5]; 
+pltopts.view   =  [130,14];          
+pltopts.fignum = 1;                 
+
+PrimitivesFullFname =
+
+/home/kuluandrej/cafedra2013-2014/Алгоритмы MVR/mvrRankingEvr.sl/data/demo.reg.xlsx
+
+ 
+ans{1} =
+ 
+minus2_
+ 
+start loading data...
+...done
+@(w,x)expl_([],sqrt_([],ln_([],frac2_([],x(:,1),x(:,2)))))
+has rank = 8.785
+
+@(w,x)sqrt_([],frac2_([],ln_([],x(:,1)),sqrt_([],x(:,2))))
+has rank = 8.518
+
+@(w,x)sqrt_([],sqrt_([],frac2_([],x(:,1),x(:,2))))
+has rank = 8.908
+
+@(w,x)sqrt_([],frac2_([],plus2_([],sqrt_([],x(:,1)),times2_([],x(:,2),sqrt_([],x(:,2)))),sqrt_([],x(:,2))))
+has rank = 8.908
+
+@(w,x)sqrt_([],frac2_([],sqrt_([],x(:,1)),times2_([],sqrt_([],x(:,2)),expl_([],x(:,2)))))
+has rank = 8.908
+
+@(w,x)sqrt_([],plus2_([],sqrt_([],x(:,1)),sqrt_([],frac2_([],x(:,1),x(:,2)))))
+has rank = 8.872
+
+@(w,x)ln_([],frac2_([],ln_([],frac2_([],ln_([],ln_([],x(:,1))),sqrt_([],plus2_([],ln_([],x(:,1)),x(:,1))))),x(:,2)))
+has rank = 8.965
+
+@(w,x)ln_([],frac2_([],ln_([],frac2_([],ln_([],ln_([],x(:,1))),sqrt_([],plus2_([],x(:,1),ln_([],sqrt_([],x(:,1))))))),x(:,2)))
+has rank = 9.472
+
+@(w,x)ln_([],frac2_([],ln_([],ln_([],frac2_([],ln_([],ln_([],x(:,1))),sqrt_([],plus2_([],x(:,1),ln_([],x(:,1))))))),sqrt_([],x(:,2))))
+has rank = 9.558
+
+@(w,x)ln_([],frac2_([],ln_([],frac2_([],ln_([],ln_([],x(:,1))),sqrt_([],plus2_([],x(:,1),ln_([],ln_([],sqrt_([],x(:,1)))))))),x(:,2)))
+has rank = 9.226
+
+@(w,x)ln_([],frac2_([],ln_([],frac2_([],ln_([],ln_([],ln_([],x(:,1)))),plus2_([],sqrt_([],x(:,1)),sqrt_([],x(:,2))))),x(:,2)))
+has rank = 8.862
+
+@(w,x)ln_([],frac2_([],ln_([],frac2_([],ln_([],ln_([],ln_([],x(:,1)))),sqrt_([],x(:,1)))),sqrt_([],x(:,2))))
+has rank = 9.089
+
+@(w,x)ln_([],ln_([],frac2_([],ln_([],frac2_([],ln_([],ln_([],x(:,1))),sqrt_([],plus2_([],ln_([],x(:,1)),x(:,1))))),x(:,2))))
+has rank = 8.104
+
+===========================
+===========================
+===========================
+===========================
+===========================
+===========================
+===========================
+===========================
+===========================
+===========================
+ProjectTitle = 'Demo for the egg carridge modelling, the toy function';
+DataFile     = 'demo.dat.txt'; 
+ModelsFile   = 'demo.mdl.txt';
+RegistryFile = 'demo.reg.xlsx'; 
+DATASEPARATOR    = ',';             
+THRESHOLDQUALITY = 0.005;     	
+MAXCYCLECOUNT    = 700;
+CROSSINGAMOUNT   = 10;
+MUTATIONAMOUNT   = 10;
+BESTELEMAMOUNT   = 20;
+MAXNUMOFPARAMS   = 6;               
+MAXNUMOFPRIMS    = 10;              
+CONTINUED         = 'off';          
+ModelBaseFile     = 'options.mdb.mat'; 
+PopulationFile    = 'options.pop.mat'; 
+nlinopts          = statset('nlinfit'); 
+nlinopts.MaxIter  = 30;             
+nlinopts.TolFun   = 1e-4;           
+nlinopts.TolX     = 1e-6;           
+nlinopts.Display  = 'off';          
+pltopts.display = 'on';             
+pltopts.xlabel = 'K';               
+pltopts.ylabel = 't';               
+pltopts.zlabel = '\sigma^{imp}';    
+pltopts.ratio  = [1 1 1];           
+pltopts.axis   = [18 28 0 .3 .5 5]; 
+pltopts.view   =  [130,14];          
+pltopts.fignum = 1;                 
+
+PrimitivesFullFname =
+
+/home/kuluandrej/cafedra2013-2014/Алгоритмы MVR/mvrRankingEvr.sl/data/demo.reg.xlsx
+
+ 
+ans{1} =
+ 
+minus2_
+ 
+start loading data...
+...done
+@(w,x)expl_([],sqrt_([],ln_([],frac2_([],x(:,1),x(:,2)))))
+has rank = 13.715
+
+@(w,x)sqrt_([],frac2_([],ln_([],x(:,1)),sqrt_([],x(:,2))))
+has rank = 12.996
+
+@(w,x)sqrt_([],sqrt_([],frac2_([],x(:,1),x(:,2))))
+has rank = 13.615
+
+@(w,x)sqrt_([],frac2_([],plus2_([],sqrt_([],x(:,1)),times2_([],x(:,2),sqrt_([],x(:,2)))),sqrt_([],x(:,2))))
+has rank = 13.615
+
+@(w,x)sqrt_([],frac2_([],sqrt_([],x(:,1)),times2_([],sqrt_([],x(:,2)),expl_([],x(:,2)))))
+has rank = 13.615
+
+@(w,x)sqrt_([],plus2_([],sqrt_([],x(:,1)),sqrt_([],frac2_([],x(:,1),x(:,2)))))
+has rank = 13.613
+
+@(w,x)ln_([],frac2_([],ln_([],frac2_([],ln_([],ln_([],x(:,1))),sqrt_([],plus2_([],ln_([],x(:,1)),x(:,1))))),x(:,2)))
+has rank = 13.693
+
+@(w,x)ln_([],frac2_([],ln_([],frac2_([],ln_([],ln_([],x(:,1))),sqrt_([],plus2_([],x(:,1),ln_([],sqrt_([],x(:,1))))))),x(:,2)))
+has rank = 13.723
+
+@(w,x)ln_([],frac2_([],ln_([],ln_([],frac2_([],ln_([],ln_([],x(:,1))),sqrt_([],plus2_([],x(:,1),ln_([],x(:,1))))))),sqrt_([],x(:,2))))
+has rank = 13.786
+
+@(w,x)ln_([],frac2_([],ln_([],frac2_([],ln_([],ln_([],x(:,1))),sqrt_([],plus2_([],x(:,1),ln_([],ln_([],sqrt_([],x(:,1)))))))),x(:,2)))
+has rank = 13.713
+
+@(w,x)ln_([],frac2_([],ln_([],frac2_([],ln_([],ln_([],ln_([],x(:,1)))),plus2_([],sqrt_([],x(:,1)),sqrt_([],x(:,2))))),x(:,2)))
+has rank = 13.388
+
+@(w,x)ln_([],frac2_([],ln_([],frac2_([],ln_([],ln_([],ln_([],x(:,1)))),sqrt_([],x(:,1)))),sqrt_([],x(:,2))))
+has rank = 13.483
+
+@(w,x)ln_([],ln_([],frac2_([],ln_([],frac2_([],ln_([],ln_([],x(:,1))),sqrt_([],plus2_([],ln_([],x(:,1)),x(:,1))))),x(:,2))))
+has rank = 13.682
+
+===========================
+===========================
+===========================
+===========================
+===========================
+===========================
+===========================
+===========================
+===========================
+===========================
+ProjectTitle = 'Demo for the egg carridge modelling, the toy function';
+DataFile     = 'demo.dat.txt'; 
+ModelsFile   = 'demo.mdl.txt';
+RegistryFile = 'demo.reg.xlsx'; 
+DATASEPARATOR    = ',';             
+THRESHOLDQUALITY = 0.005;     	
+MAXCYCLECOUNT    = 700;
+CROSSINGAMOUNT   = 10;
+MUTATIONAMOUNT   = 10;
+BESTELEMAMOUNT   = 20;
+MAXNUMOFPARAMS   = 6;               
+MAXNUMOFPRIMS    = 10;              
+CONTINUED         = 'off';          
+ModelBaseFile     = 'options.mdb.mat'; 
+PopulationFile    = 'options.pop.mat'; 
+nlinopts          = statset('nlinfit'); 
+nlinopts.MaxIter  = 30;             
+nlinopts.TolFun   = 1e-4;           
+nlinopts.TolX     = 1e-6;           
+nlinopts.Display  = 'off';          
+pltopts.display = 'on';             
+pltopts.xlabel = 'K';               
+pltopts.ylabel = 't';               
+pltopts.zlabel = '\sigma^{imp}';    
+pltopts.ratio  = [1 1 1];           
+pltopts.axis   = [18 28 0 .3 .5 5]; 
+pltopts.view   =  [130,14];          
+pltopts.fignum = 1;                 
+
+PrimitivesFullFname =
+
+/home/kuluandrej/cafedra2013-2014/Алгоритмы MVR/mvrRankingEvr.sl/data/demo.reg.xlsx
+
+ 
+ans{1} =
+ 
+minus2_
+ 
+start loading data...
+...done
+@(w,x)expl_([],sqrt_([],ln_([],frac2_([],x(:,1),x(:,2)))))
+has rank = 10.038
+
+@(w,x)sqrt_([],frac2_([],ln_([],x(:,1)),sqrt_([],x(:,2))))
+has rank = 9.216
+
+@(w,x)sqrt_([],sqrt_([],frac2_([],x(:,1),x(:,2))))
+has rank = 9.905
+
+@(w,x)sqrt_([],frac2_([],plus2_([],sqrt_([],x(:,1)),times2_([],x(:,2),sqrt_([],x(:,2)))),sqrt_([],x(:,2))))
+has rank = 9.905
+
+@(w,x)sqrt_([],frac2_([],sqrt_([],x(:,1)),times2_([],sqrt_([],x(:,2)),expl_([],x(:,2)))))
+has rank = 9.908
+
+@(w,x)sqrt_([],plus2_([],sqrt_([],x(:,1)),sqrt_([],frac2_([],x(:,1),x(:,2)))))
+has rank = 9.890
+
+@(w,x)ln_([],frac2_([],ln_([],frac2_([],ln_([],ln_([],x(:,1))),sqrt_([],plus2_([],ln_([],x(:,1)),x(:,1))))),x(:,2)))
+has rank = 10.600
+
+@(w,x)ln_([],frac2_([],ln_([],frac2_([],ln_([],ln_([],x(:,1))),sqrt_([],plus2_([],x(:,1),ln_([],sqrt_([],x(:,1))))))),x(:,2)))
+has rank = 10.650
+
+@(w,x)ln_([],frac2_([],ln_([],ln_([],frac2_([],ln_([],ln_([],x(:,1))),sqrt_([],plus2_([],x(:,1),ln_([],x(:,1))))))),sqrt_([],x(:,2))))
+has rank = 10.631
+
+@(w,x)ln_([],frac2_([],ln_([],frac2_([],ln_([],ln_([],x(:,1))),sqrt_([],plus2_([],x(:,1),ln_([],ln_([],sqrt_([],x(:,1)))))))),x(:,2)))
+has rank = 10.499
+
+@(w,x)ln_([],frac2_([],ln_([],frac2_([],ln_([],ln_([],ln_([],x(:,1)))),plus2_([],sqrt_([],x(:,1)),sqrt_([],x(:,2))))),x(:,2)))
+has rank = 10.439
+
+@(w,x)ln_([],frac2_([],ln_([],frac2_([],ln_([],ln_([],ln_([],x(:,1)))),sqrt_([],x(:,1)))),sqrt_([],x(:,2))))
+has rank = 10.421
+
+@(w,x)ln_([],ln_([],frac2_([],ln_([],frac2_([],ln_([],ln_([],x(:,1))),sqrt_([],plus2_([],ln_([],x(:,1)),x(:,1))))),x(:,2))))
+has rank = 10.532
+
+===========================
+===========================
+===========================
+===========================
+===========================
+===========================
+===========================
+===========================
+===========================
+===========================
+ProjectTitle = 'Demo for the egg carridge modelling, the toy function';
+DataFile     = 'demo.dat.txt'; 
+ModelsFile   = 'demo.mdl.txt';
+RegistryFile = 'demo.reg.xlsx'; 
+DATASEPARATOR    = ',';             
+THRESHOLDQUALITY = 0.005;     	
+MAXCYCLECOUNT    = 700;
+CROSSINGAMOUNT   = 10;
+MUTATIONAMOUNT   = 10;
+BESTELEMAMOUNT   = 20;
+MAXNUMOFPARAMS   = 6;               
+MAXNUMOFPRIMS    = 10;              
+CONTINUED         = 'off';          
+ModelBaseFile     = 'options.mdb.mat'; 
+PopulationFile    = 'options.pop.mat'; 
+nlinopts          = statset('nlinfit'); 
+nlinopts.MaxIter  = 30;             
+nlinopts.TolFun   = 1e-4;           
+nlinopts.TolX     = 1e-6;           
+nlinopts.Display  = 'off';          
+pltopts.display = 'on';             
+pltopts.xlabel = 'K';               
+pltopts.ylabel = 't';               
+pltopts.zlabel = '\sigma^{imp}';    
+pltopts.ratio  = [1 1 1];           
+pltopts.axis   = [18 28 0 .3 .5 5]; 
+pltopts.view   =  [130,14];          
+pltopts.fignum = 1;                 
+
+PrimitivesFullFname =
+
+/home/kuluandrej/cafedra2013-2014/Алгоритмы MVR/mvrRankingEvr.sl/data/demo.reg.xlsx
+
+ 
+ans{1} =
+ 
+minus2_
+ 
+start loading data...
+...done
+@(w,x)expl_([],sqrt_([],ln_([],frac2_([],x(:,1),x(:,2)))))
+has rank = 13.902
+
+@(w,x)sqrt_([],frac2_([],ln_([],x(:,1)),sqrt_([],x(:,2))))
+has rank = 13.074
+
+@(w,x)sqrt_([],sqrt_([],frac2_([],x(:,1),x(:,2))))
+has rank = 13.708
+
+@(w,x)sqrt_([],frac2_([],plus2_([],sqrt_([],x(:,1)),times2_([],x(:,2),sqrt_([],x(:,2)))),sqrt_([],x(:,2))))
+has rank = 13.708
+
+@(w,x)sqrt_([],frac2_([],sqrt_([],x(:,1)),times2_([],sqrt_([],x(:,2)),expl_([],x(:,2)))))
+has rank = 13.709
+
+@(w,x)sqrt_([],plus2_([],sqrt_([],x(:,1)),sqrt_([],frac2_([],x(:,1),x(:,2)))))
+has rank = 13.695
+
+@(w,x)ln_([],frac2_([],ln_([],frac2_([],ln_([],ln_([],x(:,1))),sqrt_([],plus2_([],ln_([],x(:,1)),x(:,1))))),x(:,2)))
+has rank = 14.403
+
+@(w,x)ln_([],frac2_([],ln_([],frac2_([],ln_([],ln_([],x(:,1))),sqrt_([],plus2_([],x(:,1),ln_([],sqrt_([],x(:,1))))))),x(:,2)))
+has rank = 14.402
+
+@(w,x)ln_([],frac2_([],ln_([],ln_([],frac2_([],ln_([],ln_([],x(:,1))),sqrt_([],plus2_([],x(:,1),ln_([],x(:,1))))))),sqrt_([],x(:,2))))
+has rank = 14.376
+
+@(w,x)ln_([],frac2_([],ln_([],frac2_([],ln_([],ln_([],x(:,1))),sqrt_([],plus2_([],x(:,1),ln_([],ln_([],sqrt_([],x(:,1)))))))),x(:,2)))
+has rank = 14.374
+
+@(w,x)ln_([],frac2_([],ln_([],frac2_([],ln_([],ln_([],ln_([],x(:,1)))),plus2_([],sqrt_([],x(:,1)),sqrt_([],x(:,2))))),x(:,2)))
+has rank = 14.359
+
+@(w,x)ln_([],frac2_([],ln_([],frac2_([],ln_([],ln_([],ln_([],x(:,1)))),sqrt_([],x(:,1)))),sqrt_([],x(:,2))))
+has rank = 14.355
+
+@(w,x)ln_([],ln_([],frac2_([],ln_([],frac2_([],ln_([],ln_([],x(:,1))),sqrt_([],plus2_([],ln_([],x(:,1)),x(:,1))))),x(:,2))))
+has rank = 14.342
+
+>> 
